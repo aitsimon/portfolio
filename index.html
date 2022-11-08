@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="ES-es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="contenido" class="container p-0">
-      <div class="home">
-        <div class="animacion">
-          <h1>Hello, my name is Aitor.</h1>
-          <p class="subtitle">Web develolper</p>
-          <p class="subtitle">Web designer</p>
-        </div>
-      </div>
-      <div class="menu">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portfolio</title>
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
     </div>
-  </body>
+  </header>
+  <div id="contenido">
+    <div class="home d-flex flex-column justify-content-center align-items-center">
+      <h1 id="myName" class="animate__animated animate__fadeInUp">My name is Aitor.</h1>
+      <span class="animate__animated animate__slideInLeft subtitle text-center">Web Designer</span>
+      <span class="animate__animated animate__slideInRight subtitle text-center">Web Developer</span>
+    </div>
+    <div class="section container d-flex flex-column justify-content-center align-items-center">
+      <h2 class="sectionTittle" id="projectsTittle">Projects</h2>
+    </div>
+    <div class="section container d-flex flex-column justify-content-center align-items-center">
+      <h2 class="sectionTittle" id="technologiesTittle">Technologies</h2>
+    </div>
+    <div class="section container d-flex flex-column justify-content-center align-items-center">
+      <h2 class="sectionTittle" id="contactTittle">Contact</h2>
+    </div>
+    <div class="section container d-flex flex-column justify-content-center align-items-center">
+      <h2 class="sectionTittle" id="aboutTittle">About</h2>
+    </div>
+  </div>
+  <footer>
+    <div class="fixed-action-btn" style="bottom: 25px; right: 25px;">
+      <a class="btn-floating btn-lg turquoise" id="openNav">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
 </html>
