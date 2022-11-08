@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div id="menuArea">
+  <!-- <div id="menuArea">
     <input type="checkbox" id="menuToggle"></input>
   
   <label for="menuToggle" class="menuOpen">
@@ -37,14 +37,23 @@
       </ul>
     </div>
   </div>
-  </div>
+  </div> -->
   <div id="contenido">
     <div class="home d-flex flex-column justify-content-center align-items-center">
       <h1 id="myName" class="animate__animated animate__fadeInUp">My name is Aitor.</h1>
-      <span class="animate__animated animate__slideInLeft subtitle text-center">Web Designer</span>
+      <div id="subtitles" class="d-flex flex-column justify-content-center align-content-center">
+        <span class="animate__animated animate__slideInLeft subtitle text-center">Web Designer</span>
       <span class="animate__animated animate__slideInRight subtitle text-center">Web Developer</span>
+      </div>
+      <div class="btnNextSection">
+        <a href="#projectsSection">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="downIcon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </a>
+        </svg>              
+      </div>
     </div>
-    <div class="section container d-flex flex-column justify-content-center align-items-center">
+    <div class="section container d-flex flex-column justify-content-center align-items-center" id="projectsSection">
       <h2 class="sectionTittle" id="projectsTittle">Projects</h2>
     </div>
     <div class="section container d-flex flex-column justify-content-center align-items-center">
@@ -56,6 +65,7 @@
     <div class="section container d-flex flex-column justify-content-center align-items-center">
       <h2 class="sectionTittle" id="aboutTittle">About</h2>
     </div>
+    
   </div>
   <script src="main.js"></script>
 </body>

@@ -4,7 +4,7 @@ Secundario: #4B556B
 Accent: $7076FE
 */
 /*Nav*/
-#menuToggle {
+/* #menuToggle {
 	display: none;
   }
   .open {
@@ -15,7 +15,7 @@ Accent: $7076FE
 	border-radius: 2px;
 	cursor: pointer;
 	position: relative;
-	right: 50px;
+	right: 8vw;
 	top: 8px;
   }
   
@@ -162,22 +162,54 @@ Accent: $7076FE
   #menuToggle:not(:checked) ~ .menuEffects ul {
 	transform: translateY(-30%);
   }
-  
+   */
 /*Body*/
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
 	background-color: #1B1C1E;
 	width: 100vw;
+	 color: white;
 }
 .home{
 	height: 100vh;
 	width: 100vw;
 }
 #myName{
+	margin: 0;
+	padding: 0;
 	font-size: 3rem;
 	color: aliceblue;
-	margin-bottom: 5vh;
+	padding-bottom: 10vh;
 	animation-duration: 1s;
 }
+#subtitles{
+	padding-bottom: 10vh;
+}
+.btnNextSection{
+	position: absolute;
+	bottom: 10vh;
+}
+.btnNextSection a{
+	color: white;
+}
+.btnNextSection a:hover{
+	color: white;
+}
+.downIcon{
+	background-color: red;
+	border-radius: 24px;
+	height: 10vh;
+
+}
+.downIcon:hover{
+	background-color: #1B1C1E;
+	height: 10vh;
+
+}
+
 .subtitle{
 	color: aliceblue;
 	font-size: 2rem;

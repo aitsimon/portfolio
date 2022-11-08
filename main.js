@@ -5,7 +5,7 @@ $('.plus-btn').click(function(){
     var elemento = document.getElementById('contenido');
     if (elemento.style.display == "" || elemento.style.display == "block") {
         elemento.style.display = "none";
-    } else {
+    } else if (elemento.style.display == "none"){
         elemento.style.display = "block";
     }
 }
