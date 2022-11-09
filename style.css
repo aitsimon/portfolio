@@ -4,7 +4,7 @@ Secundario: #4B556B
 Accent: $7076FE
 */
 /*Nav*/
-/* #menuToggle {
+#menuToggle {
 	display: none;
   }
   .open {
@@ -162,7 +162,7 @@ Accent: $7076FE
   #menuToggle:not(:checked) ~ .menuEffects ul {
 	transform: translateY(-30%);
   }
-   */
+  
 /*Body*/
 *{
 	margin: 0;
@@ -200,8 +200,8 @@ body{
 }
 .downIcon{
 	background-color: red;
-	border-radius: 24px;
-	height: 10vh;
+	border-radius: 27px;
+	height: 7.5vh;
 
 }
 .downIcon:hover{
