@@ -4,7 +4,7 @@ Secundario: #4B556B
 Accent: $7076FE
 */
 /*Nav*/
-#menuToggle {
+/* #menuToggle {
 	display: none;
   }
   .open {
@@ -14,9 +14,9 @@ Accent: $7076FE
 	display: block;
 	border-radius: 2px;
 	cursor: pointer;
-	position: relative;
+	position: fixed;
 	right: 8vw;
-	top: 8px;
+	bottom: 4vh;
   }
   
   .open:before {
@@ -66,8 +66,8 @@ Accent: $7076FE
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
+	bottom: 0;
 	top: 0;
-	left: 0;
 	background: rgba(255, 135, 2, 0.9);
   }
   
@@ -76,7 +76,7 @@ Accent: $7076FE
 	height: 30px;
 	position: absolute;
 	right: 20px;
-	top: 20px;
+	bottom: 20px;
 	background-size: 100%;
 	cursor: pointer;
   }
@@ -162,7 +162,7 @@ Accent: $7076FE
   #menuToggle:not(:checked) ~ .menuEffects ul {
 	transform: translateY(-30%);
   }
-  
+   */
 /*Body*/
 *{
 	margin: 0;
@@ -198,7 +198,7 @@ body{
 .btnNextSection a:hover{
 	color: white;
 }
-.downIcon{
+.downIcon,.downIcon:visited{
 	background-color: red;
 	border-radius: 27px;
 	height: 7.5vh;
@@ -209,7 +209,6 @@ body{
 	height: 10vh;
 
 }
-
 .subtitle{
 	color: aliceblue;
 	font-size: 2rem;
@@ -218,9 +217,37 @@ body{
 .section{
 	height: 100vh;
 	width: 100vw;
+	padding: 1vh 8vw;
 }
 .sectionTittle{
 	font-size: 2rem;
 	color: aliceblue;
 }
-/*****/
+#subtitle1{
+	position: absolute;
+	left: 0%;
+	animation: animacionSubtitulo1 1s ease-out;
+	animation-fill-mode: forwards;
+}
+@keyframes animacionSubtitulo1{
+	100%{
+		left: 25%;
+	}
+}
+#subtitle2{
+	position: absolute;
+	right: 0%;
+	top: 60%;
+	animation: animacionSubtitulo2 1s ease-out;
+	animation-fill-mode: forwards;
+}
+@keyframes animacionSubtitulo2{
+	100%{
+		right: 25%;
+	}
+}
+.subtitleSection{
+	font-size: 1.25rem;
+	text-align: start;
+	color: rgb(216, 216, 216);
+}
