@@ -1,0 +1,48 @@
+.content {
+  padding: 0;
+}
+header {
+  background-color: #333333;
+}
+nav > ul > li {
+  background-color: #232323;
+}
+.itemLink:hover,.itemLink:active,.itemLink:visited,.itemLink{
+  color: #c0bab7;
+}
+.logos > h2 {
+  color: #c0ba96;
+  font-size: larger;
+}
+.logos>h1>a{
+    color: #c0ba96;
+}
+figure > img {
+  border-width: 1 px;
+  border-style: solid;
+  padding: 3px;
+  border-color: #d6d6d6;
+}
+* {
+  font-family: URW Antiqua T Regular;
+  src: url(urw-antiqua-t-11.ttf);
+}
+figcaption {
+  font-style: italic;
+}
+.separador {
+  background-color: #333333;
+}
+.piePagina {
+  background-color: #232323;
+}
+.piePagina > p {
+  color: #919191;
+}
+.linkFig > a:active,
+.linkFig > a:visited {
+  color: #ff9900;
+}
+.barra {
+  padding-right: 12px;
+}

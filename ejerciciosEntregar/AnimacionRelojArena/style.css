@@ -1,0 +1,59 @@
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:10vh 10vw;
+}
+#barraExt{
+   border: 1px solid lightgray;
+   border-radius: 32px;
+}
+#rellenoBarra{
+    height: 5vh;
+    width: 0%;
+    animation: progress 3s linear;
+    animation-fill-mode: forwards;
+    border-radius: 32px;
+}
+#relojArena{
+    height:20vh;
+    width: 10vw;
+    margin: 0 auto;
+    animation: rotarReloj 3s linear;
+    margin-bottom: 5vh;
+}
+@keyframes rotarReloj {
+    0%{
+        transform: rotate(0deg);
+    }80%{
+        transform: rotate(640deg);
+    }90%{
+        transform: rotate(650deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+@keyframes progress {
+    0%{
+        width: 0%;
+        background-color: blue;
+    }26%{
+        background-color: yellow;
+    }52%{
+        background-color: orange;
+        
+    }80%{
+        width: 80%;
+        background-color: red;
+    }90%{
+        width: 20%;
+    }
+    99.99%{
+        background-color: green;
+    }
+    100%{
+        background-color: green;
+        width: 100%;
+    }
+} 

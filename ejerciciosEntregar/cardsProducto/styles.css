@@ -1,0 +1,78 @@
+body{
+  display: flex;
+  flex-direction: row;
+}
+#card1{
+    background-image: url(./balon.jpg);
+    background-repeat:no-repeat;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-size 2s;
+    background-position: center;
+    background-size: 200px 250px;
+    border: 1px solid black;
+}
+#card1 h3{
+    color: rgb(80, 253, 103);
+    text-align: center;
+}
+#card1:hover{
+  background-size: 400px 500px;
+}
+#card1>span{
+  color: rgb(80, 253, 103);
+}
+
+#card2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border: 1px solid black;
+  background-image: url(balon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#card2>h3{
+  opacity: 0;
+  color: rgb(80, 253, 103);
+  visibility: hidden;
+  transform: translate(-300px, -50px);
+}
+#card2>button{
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-300px, -50px);
+}
+
+#card2>span{
+  opacity: 0;
+  visibility: hidden;
+  color: rgb(80, 253, 103);
+  transform: translate(-300px, -50px);
+}
+#card2:hover>h3{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+  box-shadow: 5px 5px 10px rgb(137, 137, 138);
+  transform: translate(0, -50px);
+}
+#card2:hover>button{
+  transform: translate(0, -50px);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .7s;
+}#card2:hover>span{
+  transform: translate(0, -30px);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .8s;
+}

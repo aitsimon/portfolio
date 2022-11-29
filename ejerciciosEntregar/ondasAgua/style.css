@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    display: flex;
+    overflow: hidden;
+    background-image: url(fondoAgua.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.onda div{ 
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: black;
+    right: 50px;
+    bottom: 50px;
+    border: 1px solid lightblue;
+    border-radius: 1000px;
+    transform-origin: center;
+    background: transparent;
+}
+.onda1{
+    animation: goteo 4s infinite;
+}
+.onda2{
+    animation: goteo 4s infinite;
+    animation-delay: 0.7s;
+}
+.onda3{
+    animation: goteo 4s infinite;
+    animation-delay: 0.8s;
+
+}
+.onda4{
+    animation: goteo 4s infinite;
+    animation-delay: 1s;
+}
+@keyframes goteo {
+    0%{
+        /*Poner estado inicial de la clase para que no se vea afectada por otras propiedades*/
+        opacity: 1;
+        scale: 0.1;
+    }50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        scale: 6;
+    }
+}

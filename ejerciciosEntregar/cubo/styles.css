@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#cubo{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    perspective: 1000px;
+    perspective-origin: 40%;
+}
+
+#cubo > div{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transition: all 2s ease-out;
+
+}
+#front{
+    background-color: red;
+    top: 200px;
+    left: 400px;
+}
+#cubo:hover > #front{
+    opacity: 0.6;
+ }
+#back{
+    background-color: yellow;
+    top: 200px;
+    left: 0px;
+}
+#cubo:hover > #back{
+    /* transform:rotateY(180deg); */
+    /* left: 200px; */
+    transform: rotateY(180deg);
+    translate:200px 0px -200px;
+    transform-origin: right;  
+}
+#left{
+    top: 200px;
+    left: 200px;
+    background-color: green;
+}
+#cubo:hover > #left{
+    transform-origin: right;
+    transform:rotateY(-90deg);
+}
+#right{
+    top: 200px;
+    left: 600px;
+    background-color: salmon;
+}
+#cubo:hover > #right{
+    transform:rotateY(90deg);
+    transform-origin: left;
+}
+#up{
+    top: 0px;
+    left: 400px;
+    background-color: brown;
+
+}
+#cubo:hover > #up{
+    transform:rotateX(90deg);
+    transform-origin: bottom;
+}
+#down{
+    background-color: blue;
+    top: 400px;
+    left: 400px;
+}
+#cubo:hover > #down{
+    transform:rotateX(-90deg);
+    transform-origin: top;
+}

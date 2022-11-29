@@ -1,0 +1,43 @@
+.contenido{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.componentes{
+    position: absolute;
+    scale:0.25;
+}
+#cpu{
+    top: 0;
+    left: 0;
+}
+#gpu{
+    top: 0;
+    right: 0;
+}
+#fuente{
+    bottom: 0;
+    left: 0;
+}
+#ram{
+    bottom: 0;
+    right: 0;
+}
+#cpu:hover{
+    transform: translate(2100px,425px) scale(0.80) rotate(-18deg);
+    transition-duration: 4s;
+}
+#fuente:hover{
+    transform: translate(2900px,-600px) scale(0.5);
+    transition-duration: 4s;
+}
+#gpu:hover{
+    transform: translate(-2200px,1200px) scaleX(1.25) rotate(45deg);
+    transition-duration: 4s;
+}
+#ram:hover{
+    transform: translate(-1050px,-1200px) scaleX(2) rotate(72deg);
+    transition-duration: 4s;
+}

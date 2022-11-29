@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin:0;
+}
+#contenedor{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+
+}
+#cabecera{
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: #cecccc 1px solid;
+    box-shadow: inset 0px -9px -4px rgba(73, 73, 73, 0.274);
+    margin-bottom: 4vh;
+}
+#cabecera>input{
+    text-align: center;
+    outline: rgb(97, 77, 77);
+    border: #cecccc 1px solid;
+}
+#contenido{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height:fit-content;
+    width: fit-content;
+    border: 1px solid #cecccc;
+    box-shadow: inset 0px -9px -4px rgba(73, 73, 73, 0.274);
+}
+#foto{
+  
+}
+#adicional{
+    background-color: white;
+}
+#infoRosalia{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+}
+.negritaNombreUsuario{
+    font-weight: 700;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border-bottom: 1px solid #cecccc;
+    padding: 1vh 3vw;
+}
+#iconoPRosalia{
+    height: 5vh;
+    display: inline-block;
+}
+.iVerificado{
+    display: inline-block;
+    height: 1vh;
+}
+#txtSeguir{
+    font-weight: 800;
+    color: rgb(23, 150, 230);
+}
+#comentarios{
+    padding: 1vh 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.comentario1{
+    display: flex;
+    flex-direction: row;
+}
+.comentario2 {
+    display: flex;
+    flex-direction: column;
+}
+.mTemporal{
+    padding-top: 1vh;
+    color: #b1aeae;
+}
+#mas{
+    display: flex;
+    justify-content: center;
+}
+#mas>img{
+    padding: 4vh 0vw;
+    height: 3vh;
+    width: 3vw;
+}
+.iconoPC{
+    height: 5vh;
+}
+.responder{
+    font-weight: 600;
+}
+#interacciones{
+    border-top: 1px solid #cecccc;
+    padding: 0.5vh 3vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+#interacciones>div{
+    padding-bottom: 0.5vh;
+}
+#botones{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+.botonI{
+    height: 5vh;
+}
+#sesion{
+    padding:0vh 3vw;
+}
+#iSesion{
+    color: rgb(6, 85, 177);
+}

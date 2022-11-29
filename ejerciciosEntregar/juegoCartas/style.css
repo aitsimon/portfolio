@@ -1,0 +1,79 @@
+body{
+  background-image: url(tapete.jpg);
+}
+.baraja {
+  width: 7.6in;
+  margin: 0 auto;
+}
+.carta {
+  display: inline-block;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 2.5in;
+  height: 3.5in;
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+.carta > div {
+  width: 2.5in;
+  height: 3.5in;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.reverso, .anverso{
+  background-repeat: no-repeat;
+  background-size:cover ;
+}
+.reverso {
+  z-index: 1;
+  transition: all 0.5s;
+}
+.anverso {
+  z-index: 0;
+  transition: all 0.5s;
+}
+.reverso {
+  background-image: url(resverso.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#bastos .anverso {
+  background-image: url(bastos.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#oros .anverso {
+  background-image: url(oros.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#copas .anverso{
+  background-image: url(copas.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.carta:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.carta.girada:hover {
+  cursor: default;
+}
+.girada {
+  transform: rotateY(180deg);
+    opacity: 1;
+}
+.girada .anverso{
+    z-index: 1;
+}
+.girada .reverso{
+    z-index: 0;
+}
+.carta:hover > div{
+    opacity: 1;
+}
+.correcta{
+    
+}

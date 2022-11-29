@@ -1,0 +1,176 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+
+  };
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+#cabecera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo{
+    margin-right: 5vw;
+}
+#search_bar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#search_bar>input{
+    border-radius: 2px;
+    border-width: 0.2px;
+    border-color: #dbdbdb;
+    color: #dbdbdb;
+    text-align: center;
+}
+#informacion{
+
+}
+/* #descripcion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top: 1vh;
+} */
+/* #foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+} */
+#nombreUsuario{
+    font-weight: bold;
+}
+#iconoVerificado{
+    display: inline-block;
+    color: white;
+    margin-left: 1vw;
+    height: 2vh;
+}
+#puntoSeparador{
+    height: 2.5vh;
+}
+#seguir{
+    color: #3897f2;
+    font-weight: 700;
+}
+#location{
+    margin-left: 2vw;
+    font-size: 90%;
+}
+#logoRosalia{
+    height: 5vh;
+    margin-left: 2vw;
+    margin-right: 1vw;
+}
+.separacion{
+    background-color: #dbdbdb;
+    height: 1px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+/* #comentarios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2vh;
+} */
+#comentarios>p>small{
+    color: #aaaacb;
+}
+/* #verMas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+} */
+#verMas>object{
+    height: 4vh;
+}
+/* #comentarioJenny{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+#comentarioJenny>p>small{
+    color: #aaaacb;
+}
+#responderJenny{
+    margin-left: 2vw;
+    color: #aa99aa;
+    font-weight: 500;
+}
+#iconosInteraccion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#iconosInteraccion>img{
+    height: 4vh;
+}
+#iconosInteraccion>img:nth-child(4){
+    object-position: left;
+}
+body{
+    padding: 0;
+    margin: 0;
+}

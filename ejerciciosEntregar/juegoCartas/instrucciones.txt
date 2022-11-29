@@ -1,0 +1,4 @@
+1- Pasar raton por encima de las carta y que nos indique el raton que se puedan clickar
+2- al pasar el boton por el raton y que se pueda clickar la carta tiene que mostrar que s epuede lcickar
+3- al clickar se da la vuelta y y si clickas otra carta que sean iguales se tienen que quedar dadas la vuelta
+4- Si no son iguales se vuelven a dar la vuelta.
