@@ -289,5 +289,47 @@ body{
 	background-image: url(img/seo.svg),url(img/sem.svg);
 	background-repeat: no-repeat;
 	background-position: right 5% bottom 50%, right 35% bottom 50%;
+	background-size: auto 65%;
+}
+#divJava{
+	background-image: url(img/java.svg);
+	background-repeat: no-repeat;
+	background-position: right 20% bottom 50%;
+	background-size: auto 80%;
+}
+#divWordpress{
+	background-image: url(img/wordpress.svg);
+	background-repeat: no-repeat;
+	background-position: right 15% bottom 50%;
+	background-size: auto 80%;
+}
+#divPHP{
+	background-image: url(img/php.svg);
+	background-repeat: no-repeat;
+	background-position: right 22% bottom 50%;
 	background-size: auto 60%;
 }
+.carousel {
+	background: #EEE;
+  }
+  
+  .carousel-cell {
+	width: 95%;
+	height: 300px;
+	margin-right: 2.5%;
+	margin-left: 3.5%;
+	background: #8C8;
+	border-radius: 5px;
+	counter-increment: gallery-cell;
+  }
+  .flickity-viewport{
+	height: 300px;
+  }
+  /* cell number */
+  .carousel-cell:before {
+	display: block;
+	text-align: center;
+	line-height: 200px;
+	color: white;
+  }
+  

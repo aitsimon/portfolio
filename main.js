@@ -1,11 +1,12 @@
-$('.plus-btn').click(function(){
-    $('body').toggleClass('menu-open');
-  }); 
-  function ocultarContenido() {
-    var elemento = document.getElementById('contenido');
-    if (elemento.style.display == "" || elemento.style.display == "block") {
-        elemento.style.display = "none";
-    } else if (elemento.style.display == "none"){
-        elemento.style.display = "block";
-    }
-}
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+});

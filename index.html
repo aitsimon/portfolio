@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi Portfolio</title>
   <!-- CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,16 +13,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Libreria Animaciones Animatecss -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Libreria Slider SwiperJS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- Hoja de estilos personalizada -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- <div id="menuArea">
     <input type="checkbox" id="menuToggle"></input>
@@ -51,41 +50,49 @@
       </div>
       <div class="btnNextSection">
         <a href="#projectsSection">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="downIcon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="downIcon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
         </a>
-        </svg>              
+        </svg>
       </div>
     </div>
     <div class="section d-flex flex-column justify-content-center" id="projectsSection">
       <h2 class="sectionTittle" id="projectsTittle">Projects</h2>
+      <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true }'>
+        <div class="carousel-cell">1</div>
+        <div class="carousel-cell">12</div>
+        <div class="carousel-cell">13</div>
+        <div class="carousel-cell">14</div>
+        <div class="carousel-cell">15</div>
+      </div>
     </div>
-    <div class="section d-flex flex-column justify-content-center">
+    <div class="section d-flex flex-column justify-content-center" id="technologiesSection">
       <h2 class="sectionTittle" id="technologiesTittle">Technologies</h2>
       <span class="subtitleSection">Some of the technologies I’m used to work with.</span>
-       <div class="containerImagen">
+      <div class="containerImagen">
         <img id="fotoPerfil" class="col-10 my-5" src="img/fotoPerfil.png" alt="">
-       </div> 
-       <div class="tecnologias my-4">
-          <div class="tecnologia" id="divHTML">
-            <p class="tittleTecnologia"><span class="nTecnologia">01</span> HTML + CSS</p>
-          </div>
-          <div class="tecnologia" id="divJavascript">
-            <p class="tittleTecnologia"><span class="nTecnologia">02</span>JavaScript</p>
-          </div>
-          <div class="tecnologia" id="divSEOSEM">
-            <p class="tittleTecnologia"><span class="nTecnologia">03</span>SEO + SEM</p>
-          </div>
-          <div class="tecnologia" id="divJava">
-            <p class="tittleTecnologia"><span class="nTecnologia">04</span>Java</p>
-          </div>
-          <div class="tecnologia" id="divWordpress">
-            <p class="tittleTecnologia"><span class="nTecnologia">04</span>Wordpress</p>
-          </div>
-          <div class="tecnologia" id="divPHP">
-            <p class="tittleTecnologia"><span class="nTecnologia">06</span>PHP</p>
-          </div>
-       </div>
+      </div>
+      <div class="tecnologias my-4">
+        <div class="tecnologia" id="divHTML">
+          <p class="tittleTecnologia"><span class="nTecnologia">01</span> HTML + CSS</p>
+        </div>
+        <div class="tecnologia" id="divJavascript">
+          <p class="tittleTecnologia"><span class="nTecnologia">02</span>JavaScript</p>
+        </div>
+        <div class="tecnologia" id="divSEOSEM">
+          <p class="tittleTecnologia"><span class="nTecnologia">03</span>SEO + SEM</p>
+        </div>
+        <div class="tecnologia" id="divJava">
+          <p class="tittleTecnologia"><span class="nTecnologia">04</span>Java</p>
+        </div>
+        <div class="tecnologia" id="divWordpress">
+          <p class="tittleTecnologia"><span class="nTecnologia">04</span>Wordpress</p>
+        </div>
+        <div class="tecnologia" id="divPHP">
+          <p class="tittleTecnologia"><span class="nTecnologia">06</span>PHP</p>
+        </div>
+      </div>
     </div>
     <div class="section container d-flex flex-column justify-content-center align-items-center">
       <h2 class="sectionTittle" id="contactTittle">Contact</h2>
@@ -96,4 +103,5 @@
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>
