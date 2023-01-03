@@ -164,172 +164,177 @@ Accent: $7076FE
   }
    */
 /*Body*/
-*{
-	margin: 0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-	background-color: #1B1C1E;
-	width: 100vw;
-	color: white;
+body {
+  background-color: #1b1c1e;
+  width: 100vw;
+  color: white;
 }
-.home{
-	height: 100vh;
-	width: 100vw;
+.home {
+  height: 100vh;
+  width: 100vw;
 }
-#myName{
-	margin: 0;
-	padding: 0;
-	font-size: 3rem;
-	color: aliceblue;
-	padding-bottom: 10vh;
-	animation-duration: 1s;
+#myName {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  color: aliceblue;
+  padding-bottom: 10vh;
+  animation-duration: 1s;
 }
-#subtitles{
-	padding-bottom: 10vh;
+#subtitles {
+  padding-bottom: 10vh;
 }
-.btnNextSection{
-	position: absolute;
-	bottom: 10vh;
+.btnNextSection {
+  position: absolute;
+  bottom: 10vh;
 }
-.btnNextSection a{
-	color: white;
+.btnNextSection a {
+  color: white;
 }
-.btnNextSection a:hover{
-	color: white;
+.btnNextSection a:hover {
+  color: white;
 }
-.downIcon,.downIcon:visited{
-	background-color: red;
-	border-radius: 27px;
-	height: 7.5vh;
-
+.downIcon,
+.downIcon:visited {
+  background-color: red;
+  border-radius: 27px;
+  height: 7.5vh;
 }
-.downIcon:hover{
-	background-color: #1B1C1E;
-	height: 10vh;
-
+.downIcon:hover {
+  background-color: #1b1c1e;
+  height: 10vh;
 }
-.subtitle{
-	color: aliceblue;
-	font-size: 2rem;
-	animation-duration:2s;
+.subtitle {
+  color: aliceblue;
+  font-size: 2rem;
+  animation-duration: 2s;
 }
-.section{
-	height: 100vh;
-	width: 100vw;
-	padding: 1vh 8vw;
+.section {
+  height: 100vh;
+  width: 100vw;
+  padding: 1vh 8vw;
 }
-.sectionTittle{
-	font-size: 2rem;
-	color: aliceblue;
+.sectionTittle {
+  font-size: 2rem;
+  color: aliceblue;
 }
-#subtitle1{
-	position: absolute;
-	left: 0%;
-	animation: animacionSubtitulo1 1s ease-out;
-	animation-fill-mode: forwards;
+#subtitle1 {
+  position: absolute;
+  left: 0%;
+  animation: animacionSubtitulo1 1s ease-out;
+  animation-fill-mode: forwards;
 }
-@keyframes animacionSubtitulo1{
-	100%{
-		left: 25%;
-	}
+@keyframes animacionSubtitulo1 {
+  100% {
+    left: 25%;
+  }
 }
-#subtitle2{
-	position: absolute;
-	right: 5%;
-	top: 60%;
-	animation: animacionSubtitulo2 1s ease-out;
-	animation-fill-mode: forwards;
+#subtitle2 {
+  position: absolute;
+  right: 5%;
+  top: 60%;
+  animation: animacionSubtitulo2 1s ease-out;
+  animation-fill-mode: forwards;
 }
-@keyframes animacionSubtitulo2{
-	100%{
-		right: 25%;
-	}
+@keyframes animacionSubtitulo2 {
+  100% {
+    right: 25%;
+  }
 }
-.subtitleSection{
-	font-size: 1.25rem;
-	text-align: start;
-	color: rgb(216, 216, 216);
+.subtitleSection {
+  font-size: 1.25rem;
+  text-align: start;
+  color: rgb(216, 216, 216);
 }
-.containerImagen{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.containerImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#fotoPerfil{
-	background: none;
+#fotoPerfil {
+  background: none;
 }
-.tecnologia{
-	border-top: 1px solid white;
-	height: 12vh;
+.tecnologia {
+  border-top: 1px solid white;
+  height: 12vh;
 }
-.tittleTecnologia{
-	font-size: 1.25rem;
-	text-align: start;
-	color: rgb(216, 216, 216);
-	font-weight: 600;
+.tittleTecnologia {
+  font-size: 1.25rem;
+  text-align: start;
+  color: rgb(216, 216, 216);
+  font-weight: 600;
 }
-.nTecnologia{
-	font-weight: 100;
-	margin-right: 5vw;
+.nTecnologia {
+  font-weight: 100;
+  margin-right: 5vw;
 }
-#divHTML{
-	background-image: url(img/html.svg),url(img/css.svg);
-	background-repeat: no-repeat;
-	background-position: right 5% bottom 50%, right 35% bottom 50%;
-	background-size: auto 70%;
+#divHTML {
+  background-image: url(img/html.svg), url(img/css.svg);
+  background-repeat: no-repeat;
+  background-position: right 5% bottom 50%, right 35% bottom 50%;
+  background-size: auto 70%;
 }
-#divJavascript{
-	background-image: url(img/js.svg);
-	background-repeat: no-repeat;
-	background-position: right 20% bottom 50%;
-	background-size: auto 60%;
+#divJavascript {
+  background-image: url(img/js.svg);
+  background-repeat: no-repeat;
+  background-position: right 20% bottom 50%;
+  background-size: auto 60%;
 }
-#divSEOSEM{
-	background-image: url(img/seo.svg),url(img/sem.svg);
-	background-repeat: no-repeat;
-	background-position: right 5% bottom 50%, right 35% bottom 50%;
-	background-size: auto 65%;
+#divSEOSEM {
+  background-image: url(img/seo.svg), url(img/sem.svg);
+  background-repeat: no-repeat;
+  background-position: right 5% bottom 50%, right 35% bottom 50%;
+  background-size: auto 65%;
 }
-#divJava{
-	background-image: url(img/java.svg);
-	background-repeat: no-repeat;
-	background-position: right 20% bottom 50%;
-	background-size: auto 80%;
+#divJava {
+  background-image: url(img/java.svg);
+  background-repeat: no-repeat;
+  background-position: right 20% bottom 50%;
+  background-size: auto 80%;
 }
-#divWordpress{
-	background-image: url(img/wordpress.svg);
-	background-repeat: no-repeat;
-	background-position: right 15% bottom 50%;
-	background-size: auto 80%;
+#divWordpress {
+  background-image: url(img/wordpress.svg);
+  background-repeat: no-repeat;
+  background-position: right 15% bottom 50%;
+  background-size: auto 80%;
 }
-#divPHP{
-	background-image: url(img/php.svg);
-	background-repeat: no-repeat;
-	background-position: right 22% bottom 50%;
-	background-size: auto 60%;
+#divPHP {
+  background-image: url(img/php.svg);
+  background-repeat: no-repeat;
+  background-position: right 22% bottom 50%;
+  background-size: auto 60%;
 }
 .carousel {
-	background: #EEE;
-  }
-  
-  .carousel-cell {
-	width: 95%;
-	height: 300px;
-	margin-right: 2.5%;
-	margin-left: 3.5%;
-	background: #8C8;
-	border-radius: 5px;
-	counter-increment: gallery-cell;
-  }
-  .flickity-viewport{
-	height: 300px;
-  }
-  /* cell number */
-  .carousel-cell:before {
-	display: block;
+  background: #eee;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 200px;
+  margin-right: 10px;
+  background: #222;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  counter-increment: gallery-cell;
+}
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+.carousel-cell>img{
+	width: 100%;
+}
+.carousel-cell>a:any-link{
+	color: red;
 	text-align: center;
-	line-height: 200px;
-	color: white;
-  }
-  
+	text-decoration: none;
+}
+.carousel-cell>a>img{
+	width: 100%;
+}
