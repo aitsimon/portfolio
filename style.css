@@ -214,7 +214,7 @@ body {
   animation-duration: 2s;
 }
 .section {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   padding: 1vh 8vw;
 }
@@ -308,13 +308,18 @@ body {
   background-position: right 22% bottom 50%;
   background-size: auto 60%;
 }
+.main-carousel {
+  height: 60vh;
+  display: block;
+}
 .carousel {
   background: #eee;
+
 }
 
 .carousel-cell {
   width: 100%; /* full width */
-  height: 200px;
+  height: 100%;
   margin-right: 10px;
   background: #222;
   /* center images in cells with flexbox */
@@ -337,4 +342,7 @@ body {
 }
 .carousel-cell>a>img{
 	width: 100%;
+  aspect-ratio: 3/1;
+  object-fit: scale-down;
 }
+
