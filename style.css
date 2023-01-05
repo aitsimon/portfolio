@@ -173,6 +173,7 @@ body {
   width: 100vw;
   color: white;
 }
+/* Home section */
 .home {
   height: 100vh;
   width: 100vw;
@@ -245,6 +246,7 @@ body {
     right: 25%;
   }
 }
+/* Technologies section */
 .subtitleSection {
   font-size: 1.25rem;
   text-align: start;
@@ -273,50 +275,50 @@ body {
   margin-right: 5vw;
 }
 #divHTML {
-  background-image: url(img/html.svg), url(img/css.svg);
+  background-image: url(img/technologies/html.svg),
+    url(img/technologies/css.svg);
   background-repeat: no-repeat;
   background-position: right 5% bottom 50%, right 35% bottom 50%;
   background-size: auto 70%;
 }
 #divJavascript {
-  background-image: url(img/js.svg);
+  background-image: url(img/technologies/js.svg);
   background-repeat: no-repeat;
   background-position: right 20% bottom 50%;
   background-size: auto 60%;
 }
 #divSEOSEM {
-  background-image: url(img/seo.svg), url(img/sem.svg);
+  background-image: url(img/technologies/seo.svg), url(img/technologies/sem.svg);
   background-repeat: no-repeat;
   background-position: right 5% bottom 50%, right 35% bottom 50%;
   background-size: auto 65%;
 }
 #divJava {
-  background-image: url(img/java.svg);
+  background-image: url(img/technologies/java.svg);
   background-repeat: no-repeat;
   background-position: right 20% bottom 50%;
   background-size: auto 80%;
 }
 #divWordpress {
-  background-image: url(img/wordpress.svg);
+  background-image: url(img/technologies/wordpress.svg);
   background-repeat: no-repeat;
   background-position: right 15% bottom 50%;
   background-size: auto 80%;
 }
 #divPHP {
-  background-image: url(img/php.svg);
+  background-image: url(img/technologies/php.svg);
   background-repeat: no-repeat;
   background-position: right 22% bottom 50%;
   background-size: auto 60%;
 }
+/* Projects section */
 .main-carousel {
   height: 60vh;
   display: block;
 }
 .carousel {
   background: #eee;
-
 }
-
 .carousel-cell {
   width: 100%; /* full width */
   height: 100%;
@@ -332,17 +334,118 @@ body {
 .carousel.is-fullscreen .carousel-cell {
   height: 100%;
 }
-.carousel-cell>img{
-	width: 100%;
+.carousel-cell > img {
+  width: 100%;
 }
-.carousel-cell>a:any-link{
-	color: red;
-	text-align: center;
-	text-decoration: none;
+.carousel-cell > a:any-link {
+  color: red;
+  text-align: center;
+  text-decoration: none;
 }
-.carousel-cell>a>img{
-	width: 100%;
+.carousel-cell > a > img {
+  width: 100%;
   aspect-ratio: 3/1;
   object-fit: scale-down;
 }
+/* Contact section */
+#iconsContainer {
+  justify-content: center;
+  align-items: center;
+}
+.contactIcon {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 900px) {
+  .contactIcon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.contactIcon svg {
+  width: 80%;
+  height: 80%;
+}
+.contactIcon path {
+  fill: red;
+}
+/* Contact modal */
+.modal{
+  color: #363636;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
 
+.modal button{
+  color: black;
+}
+.modal-header{
+  border: none;
+  border-bottom: 2px solid #C0C0C0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0;
+  padding-top: 4vh;
+}
+.modal-body{
+  padding-right: 0;
+  padding-left: 0;
+}
+.modal-body>form{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+.modal-body>form>input, .modal-body>form>textarea{
+  border: 1px solid #969494;
+  border-radius: 6px;
+  padding: 1vh 2vw;
+  outline: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.modal-body>form>span{
+  margin-bottom: 4vh;
+}
+.modal-body>form>label{
+  font-weight: bold;
+  font-size: larger;
+}
+.correct{
+  color: #00D1B2 !important;
+}
+.incorrect{
+  color: #FF3860;
+}
+.modal-Title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 5vh;
+}
+.modal-footer{
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  margin-bottom: 4vh
+}
+.modal-footer>button:nth-child(1){
+  background-color: white;
+  font-size: larger;
+  border: none;
+  color: #FF3860;
+}
+.modal-footer>button:nth-child(2){
+  font-size: larger;
+  background-color: #00D1B2;
+  border: none;
+  color: white;
+  font-weight: 200;
+}
