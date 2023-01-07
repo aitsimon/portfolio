@@ -170,13 +170,13 @@ Accent: $7076FE
 }
 body {
   background-color: #1b1c1e;
-  width: 100vw;
+  width: 100%;
   color: white;
 }
 /* Home section */
 .home {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 #myName {
   margin: 0;
@@ -201,7 +201,7 @@ body {
 }
 .downIcon,
 .downIcon:visited {
-  background-color: red;
+  background-color: #04A777;
   border-radius: 27px;
   height: 7.5vh;
 }
@@ -215,8 +215,8 @@ body {
   animation-duration: 2s;
 }
 .section {
-  height: 100%;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   padding: 1vh 8vw;
 }
 .sectionTittle {
@@ -236,7 +236,7 @@ body {
 }
 #subtitle2 {
   position: absolute;
-  right: 5%;
+  right: 0%;
   top: 60%;
   animation: animacionSubtitulo2 1s ease-out;
   animation-fill-mode: forwards;
@@ -259,6 +259,7 @@ body {
 }
 #fotoPerfil {
   background: none;
+  width: 75%;
 }
 .tecnologia {
   border-top: 1px solid white;
@@ -313,7 +314,7 @@ body {
 }
 /* Projects section */
 .main-carousel {
-  height: 60vh;
+  height: 70vh;
   display: block;
 }
 .carousel {
@@ -338,7 +339,8 @@ body {
   width: 100%;
 }
 .carousel-cell > a:any-link {
-  color: red;
+  color: #04A777;
+  font-size: 3vh;
   text-align: center;
   text-decoration: none;
 }
@@ -354,21 +356,39 @@ body {
 }
 .contactIcon {
   display: flex;
+  align-items: center;
   justify-content: center;
+  
 }
-@media screen and (min-width: 900px) {
-  .contactIcon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
+
 .contactIcon svg {
-  width: 80%;
-  height: 80%;
+  cursor: pointer;
+  width: 60%;
+  height: 60%;
 }
 .contactIcon path {
-  fill: red;
+  fill: #04A777;
+}
+@media screen and (min-width: 800px) {
+  .contactIcon svg {
+    width: 40%;
+    height: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contactIcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contactIcon svg {
+    aspect-ratio: 4/3;
+    width: 60%;
+    height: 60%;
+    object-fit: scale-down;
+  }
+
 }
 /* Contact modal */
 .modal{
@@ -448,4 +468,33 @@ body {
   border: none;
   color: white;
   font-weight: 200;
+}
+
+/* Footer */
+#footer{
+  height: 25vh;
+  border-top: 1px solid #00D1B2;
+  justify-content: space-evenly;
+}
+#footer>a>svg{
+  aspect-ratio: 4/3;
+  height: 50px;
+  width: 50px;
+  border: 1px solid#fb8b24;
+  border-radius: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#footer>a>svg>path{
+  stroke: #fb8b24;
+  stroke-width: 1;
+}
+#footer>a:any-link{
+  color: #fb8b24;
+}
+#footer>span{
+  font-size: 3vh;
+}
+#toStartButton{
+  cursor: pointer;
 }

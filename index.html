@@ -22,8 +22,6 @@
   <!-- Libreria Slider SwiperJS -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <!-- Tailwindcss -->
-  <script src="https://cdn.tailwindcss.com"></script>
   <!-- Hoja de estilos personalizada -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -50,7 +48,7 @@
   <div id="contenido">
     <div class="home d-flex flex-column justify-content-center align-items-center">
       <h1 id="myName" class="animate__animated animate__fadeInUp">My name is Aitor.</h1>
-      <div id="subtitles" class="d-flex flex-column justify-content-center align-content-center">
+      <div id="subtitles" class="d-flex flex-column justify-content-center align-items-center">
         <span class="subtitle" id="subtitle1">Web Designer</span>
         <span class="subtitle" id="subtitle2">Web Developer</span>
       </div>
@@ -65,7 +63,7 @@
     </div>
     <div class="section d-flex flex-column justify-content-center" id="projectsSection">
       <h2 class="sectionTittle" id="projectsTittle">Projects</h2>
-      <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": 1000}'>
+      <div class="main-carousel my-3" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": 1000}'>
         <div class="carousel-cell"><a
             href="https://aitsimon.github.io/portfolio/ejerciciosEntregar/AnimacionRelojArena/">Load Animation<img
               src="img/projects/sandClock.png" alt="Sand-Clock project"></a></div>
@@ -99,13 +97,13 @@
               src="img/projects/puzzle.png" alt="Puzzle animation"></a></div>
       </div>
     </div>
-    <div class="section d-flex flex-column justify-content-center" id="technologiesSection">
-      <h2 class="sectionTittle" id="technologiesTittle">Technologies</h2>
-      <span class="subtitleSection">Some of the technologies I’m used to work with.</span>
-      <div class="containerImagen">
-        <img id="fotoPerfil" class="col-10 my-5" src="img/technologies/fotoPerfil.png" alt="">
+    <div class="section d-flex flex-row justify-content-center flex-wrap col-12 h-auto" id="technologiesSection">
+      <h2 class="sectionTittle col-12 text-start" id="technologiesTittle">Technologies</h2>
+      <span class="subtitleSection col-12">Some of the technologies I’m used to work with.</span>
+      <div class="containerImagen col-sm-12 col-lg-4">
+        <img id="fotoPerfil" class="my-5" src="img/technologies/fotoPerfil.png" alt="">
       </div>
-      <div class="tecnologias my-4">
+      <div class="tecnologias my-5 col-12 col-lg-8 ">
         <div class="tecnologia" id="divHTML">
           <p class="tittleTecnologia"><span class="nTecnologia">01</span> HTML + CSS</p>
         </div>
@@ -126,9 +124,10 @@
         </div>
       </div>
     </div>
-    <div class="section container d-flex flex-column justify-content-center align-items-center col-12">
-      <h2 class="sectionTittle" id="contactTittle">Contact</h2>
-      <div id="iconsContainer" class="d-flex row ">
+    <div class="section d-flex flex-column col-12 h-auto " id="contactSection">
+      <h2 class="sectionTittle text-start" id="contactTittle">Contact</h2>
+      <span class="subtitleSection col-12">We can get in touch via: </span>
+      <div id="iconsContainer" class="d-flex row">
         <div id="mail" class="contactIcon col-sm-8 col-md-8 col-lg-10 col-xl-4"><svg width="800px" height="800px" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g id="mail">
@@ -176,8 +175,35 @@
           </svg></div>
       </div>
     </div>
-    <div class="section container d-flex flex-column justify-content-center align-items-center">
-      <h2 class="sectionTittle" id="aboutTittle">About</h2>
+    <div class="section d-flex flex-column justify-content-center h-auto my-5" id="aboutSection">
+      <h2 class="sectionTittle d-flex " id="aboutTittle">About</h2>
+      <span class="subtitleSection col-12">Other things that I like to do</span>
+      <div class="main-carousel my-3" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": 3500}'>
+        <div class="carousel-cell"><a
+            href="#">Custom Keyboards<img
+              src="img/about/keyboard1.jpg" alt="Sand-Clock project"></a></div>
+        <div class="carousel-cell"> <a
+            href="#"><img
+              src="img/about/keyboard2.jpg" alt="Motherboard assembly animation number 1"></a></div>
+        <div class="carousel-cell"> <a
+            href="#">More unnecessary custom keyboards<img
+              src="img/about/keyboard6.jpg" alt="Motherboard assembly animation number 2"></a></div>
+        <div class="carousel-cell"><a
+            href="#"><img
+              src="img/about/keyboard4.jpg" alt="Bootstrap sketchup"></a></div>
+        <div class="carousel-cell"><a href="#">Legacy keyboards restoration 
+            <img src="img/about/keyboard5.jpg" alt="PureCSS sketchup"></a></div>
+        <div class="carousel-cell"><a href="#">
+            <img src="img/about/keyboard3.jpg" alt="Rosalia Instagram sketchup"></a></div>
+        <div class="carousel-cell"><a href="#"> When it comes to sports I prefer
+             <img src="img/about/bike3.jpg" alt="Card animation"></a></div>
+      </div>
+    </div>
+    <div class="section d-flex flex-row align-items-center" id="footer">
+      <a href="#myName"><svg id="toStartButton" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-up col-6" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
+      </svg></a>
+      <span class="subtitleSection col-6 text-center"> Aitor &reg; 2023</span>
     </div>
   </div>
   <script src="main.js"></script>

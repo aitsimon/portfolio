@@ -81,3 +81,15 @@ function validateInputMail(evt) {
   }
 }
 
+//Onclick github and linkedin
+
+const linkedinIcon = document.getElementById('linkedin');
+linkedinIcon.addEventListener('click', () =>{
+  window.location.href='https://www.linkedin.com/in/aitor-simon/';
+});
+
+const githubIcon = document.getElementById('github');
+githubIcon.addEventListener('click', () =>{
+  window.location.href='https://github.com/aitsimon/';
+});
+
