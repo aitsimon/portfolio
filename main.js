@@ -1,5 +1,68 @@
 /**
- * Slider
+ * @author Aitor
+ * @version 1.0
+ */
+/**
+ * Menu
+ */
+var contenidoDiv = document.getElementById('contenido');
+$("#menu").toggle(function () {
+  $('#menu').show();
+}, function () {
+  $('#menu').hide();
+});
+$('#btnClose').click(function (e) {
+  e.preventDefault();
+  $('#menu').hide();
+  $('#menuIcon').show();
+  $('#contenido').show();
+})
+$('#menuIcon').click(function (e) {
+  e.preventDefault();
+  if (contenidoDiv.style.display == '') {
+    $('#contenido').hide();
+  } else {
+    $('#contenido').show();
+  }
+  $('#menu').toggle();
+  $('#menuIcon').hide();
+});
+
+//Menu each redirection
+$('#projects').click(function (e) {
+  e.preventDefault();
+  $('#contenido').show();
+  $('#menu').hide();
+  $('#menuIcon').show();
+  window.location.href = '#projectsSection';
+});
+
+$('#technologies').click(function (e) {
+  e.preventDefault();
+  $('#contenido').show();
+  $('#menu').hide();
+  $('#menuIcon').show();
+  window.location.href = '#technologiesSection';
+});
+
+$('#contact').click(function (e) {
+  e.preventDefault();
+  $('#contenido').show();
+  $('#menu').hide();
+  $('#menuIcon').show();
+  window.location.href = '#contactSection';
+});
+
+$('#about').click(function (e) {
+  e.preventDefault();
+  $('#contenido').show();
+  $('#menu').hide();
+  $('#menuIcon').show();
+  window.location.href = '#aboutSection';
+})
+
+/**
+ * Sliders
  */
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity(elem, {
@@ -45,11 +108,11 @@ for (let i = 0; i < mailForm.children.length; i++) {
 function validateInputMail(evt) {
   var element = evt.currentTarget;
   var name = element.name;
-  if (element.nextSibling.nextSibling.nodeName=='LABEL') {
+  if (element.nextSibling.nextSibling.nodeName == 'LABEL') {
     var spanValidate = document.createElement('span');
     element.parentNode.insertBefore(spanValidate, element.nextSibling);
-  }else{
-    spanValidate=element.nextSibling;
+  } else {
+    spanValidate = element.nextSibling;
   }
   console.log(element.nextSibling);
   if (name === 'name') {
@@ -84,12 +147,12 @@ function validateInputMail(evt) {
 //Onclick github and linkedin
 
 const linkedinIcon = document.getElementById('linkedin');
-linkedinIcon.addEventListener('click', () =>{
-  window.location.href='https://www.linkedin.com/in/aitor-simon/';
+linkedinIcon.addEventListener('click', () => {
+  window.location.href = 'https://www.linkedin.com/in/aitor-simon/';
 });
 
 const githubIcon = document.getElementById('github');
-githubIcon.addEventListener('click', () =>{
-  window.location.href='https://github.com/aitsimon/';
+githubIcon.addEventListener('click', () => {
+  window.location.href = 'https://github.com/aitsimon/';
 });
 
